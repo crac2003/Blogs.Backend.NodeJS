@@ -1,0 +1,10 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "target": "ES2016"
+    },
+    "include": [
+        "server.ts",
+        "app/**/*"
+    ]
+}
