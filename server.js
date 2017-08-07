@@ -1,4 +1,6 @@
-import { express } from "express";
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express = require("express");
 var config = {
     port: 3300
 };
@@ -18,3 +20,4 @@ class Server {
         });
     }
 }
+Server.initialize();

@@ -1,5 +1,6 @@
-import { express } from "express";
+import * as express from "express";
 
+//TODO:read from file 
 var config = {
     port: 3300
 }
@@ -29,3 +30,4 @@ class Server {
     }
 }
 
+Server.initialize();

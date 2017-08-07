@@ -1,7 +1,9 @@
 {
     "compileOnSave": true,
     "compilerOptions": {
-        "target": "ES2016"
+        "target": "ES6",
+        "diagnostics": true,
+        "module": "commonjs"
     },
     "include": [
         "server.ts",
