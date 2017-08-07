@@ -1,5 +1,7 @@
 import * as express from "express";
 
+import { authorization } from "./app/endpoints/authorization"
+
 //TODO:read from file 
 var config = {
     port: 3300
@@ -21,6 +23,19 @@ class Server {
 
     bootstrap(){
         this.exp = new express();
+ 
+        var context = {
+            url:'/',
+            app:this.exp
+        };
+
+        new authorization().register(context);
+        
+        this.exp.get('/', function(req, res){
+            res.json({
+                message:'done'
+            })
+        });
     }
 
     start(port:number){

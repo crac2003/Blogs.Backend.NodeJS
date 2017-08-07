@@ -3,7 +3,8 @@
     "compilerOptions": {
         "target": "ES6",
         "diagnostics": true,
-        "module": "commonjs"
+        "module": "commonjs",
+        "alwaysStrict": true
     },
     "include": [
         "server.ts",
